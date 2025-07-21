@@ -23,3 +23,11 @@ optional-dependencies.test = [
 [build-system]
 requires = ["setuptools>=70"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = { file = "src/VERSION" } 
+readme = { file = [ "README.md" ] }
+
+[tool.setuptools.packages.find]
+include = [ "src*" ]
+exclude = [ "tests*" ]
