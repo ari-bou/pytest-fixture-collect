@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from src import collect_fixture_file_paths
+from pytest_fixture_collect import collect_fixture_file_paths
 
 
 def test_collect_fixture_file_paths(tmp_path: Path) -> None:

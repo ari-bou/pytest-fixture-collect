@@ -25,9 +25,9 @@ requires = ["setuptools>=70"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.dynamic]
-version = { file = "src/VERSION" } 
+version = { file = "pytest_fixture_collect/VERSION" } 
 readme = { file = [ "README.md" ] }
 
 [tool.setuptools.packages.find]
-include = [ "src*" ]
+include = [ "pytest_fixture_collect*" ]
 exclude = [ "tests*" ]
